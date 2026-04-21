@@ -1,0 +1,7 @@
+# Local frontend config (contains project-specific values)
+site-config.js
+
+# Common environment files
+.env
+.env.*
+!.env.example
