@@ -1,0 +1,514 @@
+/* ── Founder page nav active link ─────────────────────────── */
+.nav-link--active {
+  color: #fff !important;
+  border-bottom: 1px solid #c0392b;
+  padding-bottom: 2px;
+}
+
+/* ============================================================
+   FOUNDER HERO
+   ============================================================ */
+.founder-hero-section {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.founder-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 5rem;
+  width: 100%;
+}
+
+.founder-hero-content h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  line-height: 1.0;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+}
+
+.founder-hero-tagline {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(0.9rem, 1.8vw, 1.25rem);
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+.founder-hero-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* ============================================================
+   FOUNDER ABOUT
+   ============================================================ */
+.founder-about-section {
+  background-color: #111;
+  border-top: 1px solid #1e1e1e;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.founder-about-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.founder-photo-wrap {
+  position: sticky;
+  top: 5.5rem;
+}
+
+.founder-photo-placeholder {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.founder-photo-placeholder span {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #3a3a3a;
+}
+
+/* Replace the placeholder with an actual photo like this:
+   .founder-photo-placeholder { background-image: url('your-photo.jpg'); background-size: cover; }
+   .founder-photo-placeholder span { display: none; }
+*/
+
+.founder-quick-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.founder-fact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  background: #161616;
+  border: 1px solid #202020;
+  text-align: center;
+}
+
+.founder-fact-num {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #c0392b;
+  line-height: 1;
+}
+
+.founder-fact-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #666;
+  margin-top: 0.4rem;
+}
+
+.founder-about-text h3 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.founder-about-text p {
+  font-size: 0.95rem;
+  color: #999;
+  line-height: 1.9;
+  font-weight: 300;
+  margin-bottom: 1.25rem;
+}
+
+.founder-about-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* ============================================================
+   SKILLS
+   ============================================================ */
+.founder-skills-section {
+  background-color: #0d0d0d;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background: #141414;
+  border: 1px solid #1f1f1f;
+  padding: 2rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.skill-card:hover {
+  border-color: #333;
+  transform: translateY(-4px);
+}
+
+.skill-card-icon {
+  font-size: 0.85rem;
+  color: #c0392b;
+  margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.85rem;
+}
+
+.skill-card p {
+  font-size: 0.87rem;
+  color: #888;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+  font-weight: 300;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.skill-tags li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #777;
+  background: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  padding: 0.25rem 0.6rem;
+}
+
+/* ============================================================
+   FOUNDER PROJECTS
+   ============================================================ */
+.founder-projects-section {
+  background: #111;
+  border-top: 1px solid #1e1e1e;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.founder-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.founder-project-card {
+  background: #161616;
+  border: 1px solid #1f1f1f;
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.founder-project-card:hover {
+  border-color: #3a3a3a;
+  transform: translateY(-4px);
+}
+
+.founder-project-img {
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+}
+
+.founder-project-body {
+  padding: 1.75rem;
+}
+
+.founder-project-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.founder-project-role {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.founder-project-status {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid;
+}
+
+.founder-project-status--wip {
+  color: #c0a030;
+  border-color: rgba(192, 160, 48, 0.35);
+  background: rgba(192, 160, 48, 0.07);
+}
+
+.founder-project-status--shipped {
+  color: #4a9a6a;
+  border-color: rgba(74, 154, 106, 0.35);
+  background: rgba(74, 154, 106, 0.07);
+}
+
+.founder-project-status--live {
+  color: #c0392b;
+  border-color: rgba(192, 57, 43, 0.35);
+  background: rgba(192, 57, 43, 0.07);
+}
+
+.founder-project-body h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.founder-project-body p {
+  font-size: 0.88rem;
+  color: #888;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+  font-weight: 300;
+}
+
+.founder-project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.founder-project-tags span {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #666;
+  background: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  padding: 0.2rem 0.55rem;
+}
+
+/* ============================================================
+   EXPERIENCE TIMELINE
+   ============================================================ */
+.founder-experience-section {
+  background-color: #0d0d0d;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  bottom: 0;
+  width: 1px;
+  background: #2a2a2a;
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 3.5rem;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -2.5rem;
+  top: 0.5rem;
+  width: 9px;
+  height: 9px;
+  background: #c0392b;
+  transform: translateX(-4px);
+}
+
+.timeline-content {
+  padding-left: 1rem;
+}
+
+.timeline-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-date {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #c0392b;
+}
+
+.timeline-type {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #555;
+  border: 1px solid #2a2a2a;
+  padding: 0.15rem 0.5rem;
+}
+
+.timeline-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-content h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #666;
+  text-transform: none;
+  margin-bottom: 0.85rem;
+}
+
+.timeline-content p {
+  font-size: 0.9rem;
+  color: #888;
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.timeline-highlights {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.timeline-highlights li {
+  font-size: 0.85rem;
+  color: #777;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.timeline-highlights li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: #c0392b;
+}
+
+/* ============================================================
+   FOUNDER CONTACT
+   ============================================================ */
+.founder-contact-section {
+  background: #0a0a0a;
+  border-top: 1px solid #1a1a1a;
+}
+
+.founder-contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.founder-contact-text h3 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: #fff;
+  margin-bottom: 1.25rem;
+}
+
+.founder-contact-text p {
+  font-size: 0.95rem;
+  color: #888;
+  line-height: 1.85;
+  font-weight: 300;
+  margin-bottom: 1.75rem;
+}
+
+.founder-email-link {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: #c0392b;
+  border-bottom: 1px solid rgba(192, 57, 43, 0.35);
+  padding-bottom: 3px;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.founder-email-link:hover {
+  color: #e04030;
+  border-color: #e04030;
+}
+
+/* ============================================================
+   FOUNDER RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .founder-about-grid {
+    grid-template-columns: 260px 1fr;
+    gap: 3rem;
+  }
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+  .founder-projects-grid { grid-template-columns: 1fr; }
+  .founder-contact-layout { grid-template-columns: 1fr; gap: 3rem; }
+}
+
+@media (max-width: 768px) {
+  .founder-about-grid {
+    grid-template-columns: 1fr;
+  }
+  .founder-photo-wrap { position: static; }
+  .founder-photo-placeholder { aspect-ratio: 4 / 3; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .founder-quick-facts { grid-template-columns: repeat(3, 1fr); }
+}
