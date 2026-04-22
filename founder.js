@@ -21,16 +21,16 @@ if (hamburger && mobileMenu) {
   });
 }
 
-// ── Resume download placeholder ───────────────────────────
-const resumeBtn = document.getElementById('resume-download-btn');
-if (resumeBtn) {
-  resumeBtn.addEventListener('click', (e) => {
-    // Replace href with your actual resume PDF path when ready, e.g.:
-    // resumeBtn.href = 'joseph-tascona-resume.pdf';
+// ── Founder CV download placeholder ───────────────────────
+const founderCvBtn = document.getElementById('founder-cv-download-btn');
+if (founderCvBtn) {
+  founderCvBtn.addEventListener('click', (e) => {
+    // Replace href with your actual founder CV PDF path when ready, e.g.:
+    // founderCvBtn.href = 'joseph-tascona-founder-cv.pdf';
     // For now, prevent default until a real file is linked.
-    if (resumeBtn.getAttribute('href') === '#') {
+    if (founderCvBtn.getAttribute('href') === '#') {
       e.preventDefault();
-      alert('Resume PDF coming soon. Check back or send an email.');
+      alert('Founder CV PDF coming soon. Check back or send an email.');
     }
   });
 }
